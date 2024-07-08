@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+margin:0%;
+padding:0%;
+box-sizing:border-box;
+}
+html,body{
+width:100%;
+height:100%;
+}
+body{
+    font-family: 'poppins';
+    background-color: #172139;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+    position: sticky;
+}
+nav>img{
+    width: 5%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+   
+}
+
+.nav-box{
+    width: 30%;
+    height: 100%;
+
+}
+.search-bar{
+    width: 17%;
+    height: 40%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+   
+
+    background-color: grey;
+}
+.search-bar>input{
+    background-color: grey;
+    border: 1px solid grey;
+    border-left: 1px solid white;
+   
+}
+::placeholder{
+    padding-left: 10px;
+    color: whitesmoke;
+}
+.options{
+    width: 50%;
+    height: 100%;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    align-items: center;
+
+}
+.options>ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.options>ul>li{
+    cursor: pointer;
+    position: relative;
+
+}
+.options>ul>li::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    border-bottom: 3px solid #29adef;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+}
+.options>ul>li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+    
+
+.accounts{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40%;
+}
+.accounts>img{
+    width: 80%;
+    height:80%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.accounts>img:hover{
+    width: 85%;
+    height: 88%;
+    box-shadow: 0px 0px 20px #29adef;
+}
+.ri-settings-2-line{
+    width: 20%;
+    font-size: 150%;
+    transition: 0.5s
+}
+.ri-settings-2-line:hover{
+    font-size: 180%;
+    
+}
+.header{
+    margin-top: 2%;
+    width: 90%;
+    height: 70%;
+    position: relative;
+    transition: 0.5s;
+
+
+}
+.header:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #29adef;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    
+    z-index: -100;
+    
+}
+.content>img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    
+}
+.gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#172139,transparent);
+}
+.matter{
+    margin-left: 5%;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top:10%;
+    z-index: 100;
+    color: white;
+    
+   
+
+}
+.matter>h2{
+    font-size: 220%;
+    margin-bottom: 10px;
+}
+.matter>p{
+    margin-top: 10px;
+}
+.matter>button{
+    width: 40%;
+    margin-top: 20%;
+    height: 10%;
+    background: linear-gradient(to right,#246e93,#29adef);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.matter>button:hover{
+    width: 44%;
+    height: 15%;
+
+}
+
+
+.cards{
+    width: 90%;
+    color: white;
+}
+.cards>.heading{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+.cards-holder{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box{
+    width: 15%;
+    height: 80%;
+    object-fit: cover;
+    transition: 0.5s;
+
+}
+.box:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #29adef;
+}
+.box>img{
+    width: 100%;
+    height: 100%;
+}
